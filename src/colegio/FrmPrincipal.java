@@ -30,6 +30,9 @@ public class FrmPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMAlumnos = new javax.swing.JMenu();
         jMAAgregar = new javax.swing.JMenuItem();
@@ -43,6 +46,8 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jMCListar = new javax.swing.JMenuItem();
         jMMatriculas = new javax.swing.JMenu();
         jMMAgregar = new javax.swing.JMenuItem();
+        jMMatriculas1 = new javax.swing.JMenu();
+        jMMAgregar1 = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         jMSalir = new javax.swing.JMenuItem();
 
@@ -51,9 +56,29 @@ public class FrmPrincipal extends javax.swing.JFrame {
         setBackground(new java.awt.Color(204, 255, 204));
         setUndecorated(true);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/colegio/Imagenes/logo-college-removebg-preview.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+
+        jPanel1.setBackground(new java.awt.Color(0, 0, 153));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 855, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 39, Short.MAX_VALUE)
+        );
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/colegio/Imagenes/Imagen inicio.jpeg"))); // NOI18N
+
+        jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
         jMenuBar1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jMenuBar1.setMinimumSize(new java.awt.Dimension(0, 4));
 
+        jMAlumnos.setBackground(new java.awt.Color(255, 255, 255));
         jMAlumnos.setText("Alumnos");
         jMAlumnos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
@@ -83,6 +108,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMAlumnos);
 
+        jMDocentes.setBackground(new java.awt.Color(255, 255, 255));
         jMDocentes.setText("Docentes");
         jMDocentes.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
@@ -104,6 +130,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMDocentes);
 
+        jMCursos.setBackground(new java.awt.Color(255, 255, 255));
         jMCursos.setText("Cursos");
         jMCursos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
@@ -125,6 +152,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMCursos);
 
+        jMMatriculas.setBackground(new java.awt.Color(255, 255, 255));
         jMMatriculas.setText("Matriculas");
         jMMatriculas.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
@@ -138,6 +166,21 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMMatriculas);
 
+        jMMatriculas1.setBackground(new java.awt.Color(255, 255, 255));
+        jMMatriculas1.setText("Calificaciones");
+        jMMatriculas1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+
+        jMMAgregar1.setText("Registro de calificaciones");
+        jMMAgregar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMMAgregar1ActionPerformed(evt);
+            }
+        });
+        jMMatriculas1.add(jMMAgregar1);
+
+        jMenuBar1.add(jMMatriculas1);
+
+        jMenu1.setBackground(new java.awt.Color(255, 255, 255));
         jMenu1.setText("Cerrar");
         jMenu1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
 
@@ -157,11 +200,26 @@ public class FrmPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 278, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 307, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
@@ -223,6 +281,10 @@ public class FrmPrincipal extends javax.swing.JFrame {
         frm.setVisible(true);
     }//GEN-LAST:event_jMMAgregarActionPerformed
 
+    private void jMMAgregar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMMAgregar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMMAgregar1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -259,6 +321,8 @@ public class FrmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenuItem jMAAgregar;
     private javax.swing.JMenuItem jMAConsultar;
     private javax.swing.JMenuItem jMAListar;
@@ -269,10 +333,13 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMDListar;
     private javax.swing.JMenu jMDocentes;
     private javax.swing.JMenuItem jMMAgregar;
+    private javax.swing.JMenuItem jMMAgregar1;
     private javax.swing.JMenu jMMatriculas;
+    private javax.swing.JMenu jMMatriculas1;
     private javax.swing.JMenuItem jMSalir;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
