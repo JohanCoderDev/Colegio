@@ -69,7 +69,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 39, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/colegio/Imagenes/Imagen inicio.jpeg"))); // NOI18N
